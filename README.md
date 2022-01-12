@@ -1,0 +1,2 @@
+# RVFullscreenPopGesture
+对FDFullscreenPopGesture的fd_pushViewController方法判断，解决与QM的页面跳转的冲突
