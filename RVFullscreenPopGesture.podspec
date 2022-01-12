@@ -29,6 +29,10 @@ TODO: Add long description of the pod here.
   # s.social_media_url = 'https://twitter.com/<TWITTER_USERNAME>'
 
   s.ios.deployment_target = '9.0'
+  s.static_framework = true
+  s.pod_target_xcconfig = {
+    'VALID_ARCHS' => 'x86_64 armv7 armv7s arm64'
+  }
 
   s.source_files = 'RVFullscreenPopGesture/Classes/**/*'
   
