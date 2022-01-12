@@ -372,13 +372,11 @@
 			inputPaths = (
 				"${PODS_ROOT}/Target Support Files/Pods-RVFullscreenPopGesture_Example/Pods-RVFullscreenPopGesture_Example-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/FDFullscreenPopGesture/FDFullscreenPopGesture.framework",
-				"${BUILT_PRODUCTS_DIR}/RVFullscreenPopGesture/RVFullscreenPopGesture.framework",
 				"${BUILT_PRODUCTS_DIR}/YYKit/YYKit.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/FDFullscreenPopGesture.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RVFullscreenPopGesture.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/YYKit.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
