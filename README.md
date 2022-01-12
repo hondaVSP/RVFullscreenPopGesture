@@ -27,3 +27,4 @@ cai_yh, cai_yh@reachauto.com
 ## License
 
 RVFullscreenPopGesture is available under the MIT license. See the LICENSE file for more info.
+对FDFullscreenPopGesture的fd_pushViewController方法判断，解决与QM的页面跳转的冲突
