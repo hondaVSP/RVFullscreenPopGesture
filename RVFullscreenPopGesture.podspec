@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'RVFullscreenPopGesture'
-  s.version          = '0.1.0'
+  s.version          = '0.1.1'
   s.summary          = 'A short description of RVFullscreenPopGesture.'
 
 # This description is used to generate tags and improve search results.
@@ -43,6 +43,6 @@ TODO: Add long description of the pod here.
   s.public_header_files = 'RVFullscreenPopGesture/Classes/**/*.h'
   s.frameworks = 'UIKit'
   s.dependency 'FDFullscreenPopGesture'
-  s.dependency 'YYKit'
+  s.dependency 'YYCategories'
   
 end

@@ -8,7 +8,7 @@
 #import "UINavigationController+RVFullscreenPopGesture.h"
 #import <objc/runtime.h>
 #import <FDFullscreenPopGesture/UINavigationController+FDFullscreenPopGesture.h>
-#import <YYKit/NSObject+YYAdd.h>
+#import <YYCategories/NSObject+YYAdd.h>
 
 @implementation UINavigationController (RVFullscreenPopGesture)
 
