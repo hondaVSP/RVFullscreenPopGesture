@@ -29,7 +29,7 @@
 ///
 /// Adding the implementation file of this category to your target will
 /// automatically patch UINavigationController with this feature.
-@interface UINavigationController (RVFullscreenPopGesture)
+@interface UINavigationController (FDFullscreenPopGesture)
 
 /// The gesture recognizer that actually handles interactive pop.
 @property (nonatomic, strong, readonly) UIPanGestureRecognizer *fd_fullscreenPopGestureRecognizer;
@@ -44,7 +44,7 @@
 /// Allows any view controller to disable interactive pop gesture, which might
 /// be necessary when the view controller itself handles pan gesture in some
 /// cases.
-@interface UIViewController (RVFullscreenPopGesture)
+@interface UIViewController (FDFullscreenPopGesture)
 
 /// Whether the interactive pop gesture is disabled when contained in a navigation
 /// stack.

@@ -20,7 +20,7 @@
 // OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 // SOFTWARE.
 
-#import "UINavigationController+RVFullscreenPopGesture.h"
+#import "UINavigationController+FDFullscreenPopGesture.h"
 #import <objc/runtime.h>
 
 @interface _FDFullscreenPopGestureRecognizerDelegate : NSObject <UIGestureRecognizerDelegate>
@@ -99,7 +99,7 @@ typedef void (^_FDViewControllerWillAppearInjectBlock)(UIViewController *viewCon
 
 @end
 
-@implementation UINavigationController (RVFullscreenPopGesture)
+@implementation UINavigationController (FDFullscreenPopGesture)
 
 + (void)load
 {
@@ -111,16 +111,13 @@ typedef void (^_FDViewControllerWillAppearInjectBlock)(UIViewController *viewCon
 
 - (void)fd_pushViewController:(UIViewController *)viewController animated:(BOOL)animated
 {
-    
-    if ([viewController isKindOfClass:NSClassFromString(@"RVViewController")] || [viewController isKindOfClass:NSClassFromString(@"BaseViewController")] || [viewController isKindOfClass:NSClassFromString(@"WMPageController")]) {
+    if ([viewController isKindOfClass:NSClassFromString(@"RVViewController")]) {
     }
     else
     {
         [self fd_pushViewController:viewController animated:animated];
         return;
     }
-    
-    
     if (![self.interactivePopGestureRecognizer.view.gestureRecognizers containsObject:self.fd_fullscreenPopGestureRecognizer]) {
         
         // Add our own gesture recognizer to where the onboard screen edge pan gesture recognizer is attached to.
@@ -212,7 +209,7 @@ typedef void (^_FDViewControllerWillAppearInjectBlock)(UIViewController *viewCon
 
 @end
 
-@implementation UIViewController (RVFullscreenPopGesture)
+@implementation UIViewController (FDFullscreenPopGesture)
 
 - (BOOL)fd_interactivePopDisabled
 {
